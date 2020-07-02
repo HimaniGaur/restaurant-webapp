@@ -7,8 +7,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
-import {AppRoutingModule} from './app-routing/app-routing.module';
-import {MatDialogModule} from '@angular/material/dialog';
+import { AppRoutingModule } from './app-routing/app-routing.module';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -48,7 +49,8 @@ import {LeaderService} from './services/leader.service';
     MatButtonModule,
     MatListModule,
     AppRoutingModule,
-    MatDialogModule
+    MatDialogModule,
+    MatProgressSpinnerModule
   ],
   providers: [
     DishService,

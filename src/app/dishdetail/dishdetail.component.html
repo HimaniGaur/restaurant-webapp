@@ -24,8 +24,6 @@
           <button mat-button>SHARE</button>
         </mat-card-actions>
       </mat-card>
-
-
   </div>
 
   <div fxFlex="40">
@@ -36,8 +34,11 @@
                   <p matLine> {{item.rating}} stars </p>
                   <p matLine>-- {{item.author}} {{item.date | date}}</p>
                 </mat-list-item>
-              </mat-list>
-      
+              </mat-list>    
+  </div>
+
+  <div fxFlex [hidden]="dish">
+    <mat-spinner></mat-spinner><h4>Loading...Please Wait</h4>
   </div>
 
 </div>
